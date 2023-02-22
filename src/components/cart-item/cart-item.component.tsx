@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, memo } from 'react'
 import { CartItemContainer, ItemDetails } from './cart-item.styles'
 import { CartItem as TCartItem } from '../../store/cart/cart.reducer'
 
@@ -21,4 +21,4 @@ const CartItem: FC<CartItemProps> = ({ cartItem }) => {
   )
 }
 
-export default CartItem
+export default memo(CartItem)

@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import { FC, memo } from 'react'
 import { useDispatch } from 'react-redux'
 
 import {
@@ -46,4 +46,4 @@ const CheckoutItem: FC<CheckoutItemProps> = ({ cartItem }) => {
   )
 }
 
-export default CheckoutItem
+export default memo(CheckoutItem)
